@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "name": "boilerplate_generic_library",
+  "version": "0.0.0",
+  "description": "boilerplate for generic library",
+  "author": "imafee <imafee@163.com> (https://)",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/imafee/boilerplate_generic_library#readme",
+  "bugs": {
+    "url": "https://github.com/imafee/boilerplate_generic_library/issues",
+    "email": "imafee@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imafee/boilerplate_generic_library.git"
+  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://"
+    }
+  ],
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "mybin": "./bin/cli.js"
+  },
+  "directories": {
+    "lib": "src",
+    "doc": "doc",
+    "test": "test"
+  },
+  "config": {
+    "customField": 123
+  },
+  "engines": {
+    "node": ">=0.12 <=18"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
