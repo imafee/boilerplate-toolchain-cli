@@ -47,6 +47,11 @@
     "access": "public"
   },
   "scripts": {
+    "prettierwrite": "prettier --cache --write .",
+    "prettiercheck": "prettier --cache --check .",
     "start": "node index.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
   }
 }

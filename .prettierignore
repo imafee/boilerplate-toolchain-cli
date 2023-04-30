@@ -1,0 +1,8 @@
+# local
+.history/
+# dist/
+# build/
+# coverage/
+.DS_Store
+# .nyc_output
+package-lock.json
