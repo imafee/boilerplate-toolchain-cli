@@ -22,7 +22,7 @@
     }
   ],
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
     "mybin": "./bin/cli.js"
   },
@@ -46,6 +46,10 @@
     "registry": "https://npm.pkg.github.com",
     "access": "public"
   },
+  "sideEffects": {
+    "./src/some-dir/*": false,
+    "./src/some-file.js": true
+  },
   "scripts": {
     "start": "node index.js",
     "build": "npm-run-all eslint:check clean --parallel build:*",
@@ -61,6 +65,13 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/preset-env": "^7.21.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -68,5 +79,8 @@
     "prettier": "^2.8.8",
     "rimraf": "^5.0.0",
     "rollup": "^3.21.3"
+  },
+  "dependencies": {
+    "core-js": "^3.30.1"
   }
 }

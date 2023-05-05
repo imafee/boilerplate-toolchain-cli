@@ -1,8 +1,8 @@
 # folders
 .history/
 node_modules/
-# dist/
-# build/
+dist/
+build/
 # coverage/
 
 # files

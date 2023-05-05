@@ -12,10 +12,9 @@ const banner = `/*!
 `;
 
 const footer = `/*!
- * ${name} v${version} (${license})
- * author: ${author}
- * issue: ${bugs.url}
- * homepage: ${homepage}
+ * Author: ${author}
+ * Issue: ${bugs.url}
+ * Homepage: ${homepage}
  */
 `;
 
